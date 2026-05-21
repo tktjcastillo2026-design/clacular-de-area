@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Áreas</title>
+
+    <!-- CONEXIÓN CON CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Calculadora de Áreas</h1>
+
+        <!-- CUADRADO -->
+        <div class="card">
+            <h2>Área del Cuadrado</h2>
+
+            <input type="number" id="lado" placeholder="Ingrese el lado">
+
+            <button onclick="calcularCuadrado()">
+                Calcular
+            </button>
+
+            <p id="resultadoCuadrado"></p>
+        </div>
+
+        <!-- TRIÁNGULO -->
+        <div class="card">
+            <h2>Área del Triángulo</h2>
+
+            <input type="number" id="base" placeholder="Ingrese la base">
+
+            <input type="number" id="altura" placeholder="Ingrese la altura">
+
+            <button onclick="calcularTriangulo()">
+                Calcular
+            </button>
+
+            <p id="resultadoTriangulo"></p>
+        </div>
+
+        <!-- CÍRCULO -->
+        <div class="card">
+            <h2>Área del Círculo</h2>
+
+            <input type="number" id="radio" placeholder="Ingrese el radio">
+
+            <button onclick="calcularCirculo()">
+                Calcular
+            </button>
+
+            <p id="resultadoCirculo"></p>
+        </div>
+
+    </div>
+
+    <!-- CONEXIÓN CON JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
